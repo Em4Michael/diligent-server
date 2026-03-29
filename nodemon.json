@@ -1,0 +1,6 @@
+{
+  "watch": ["backend"],
+  "ext": "js,json",
+  "ignore": ["backend/uploads/*", "backend/templates/*"],
+  "delay": 500
+}
