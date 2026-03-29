@@ -9,7 +9,7 @@ const signToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN || '7d' });
 
 // POST /api/auth/register
-router.post('/register', async (req, res) => { 
+router.post('/register', async (req, res) => {
   try {
     const { email, password, fullName } = req.body;
 
